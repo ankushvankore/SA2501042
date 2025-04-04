@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
 
 public class D17HandlingRadioButton {
 
@@ -26,6 +27,8 @@ public class D17HandlingRadioButton {
 		System.out.println("Selected: " + gnFemale.isSelected());
 		System.out.println("Visible : " + gnFemale.isDisplayed());
 		System.out.println("Enable  : " + gnFemale.isEnabled());
+		
+		//driver.findElement(RelativeLocator.with(By.tagName("input")).toRightOf(By.cssSelector("input[name^=\"gender\"]"))).click();
 	}
 
 }
