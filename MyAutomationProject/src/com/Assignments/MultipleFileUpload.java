@@ -21,7 +21,7 @@ public class MultipleFileUpload {
 		//driver.findElement(By.id("files")).sendKeys("C:\\Users\\Dell\\Downloads\\02 4x6  1.jpg");
 		//driver.findElement(By.id("files")).sendKeys("C:\\Users\\Dell\\Downloads\\Appium.webp");
 		
-		driver.findElement(By.id("files")).sendKeys("C:\\Users\\Dell\\Downloads\\02 4x6  1.jpg" +"\n"+ "C:\\Users\\Dell\\Downloads\\Appium.webp");
+		driver.findElement(By.id("files")).sendKeys("C:\\Users\\Dell\\Downloads\\02 4x6  1.jpg" +"\n" + "C:\\Users\\Dell\\Downloads\\Appium.webp");
 	}
 
 }
