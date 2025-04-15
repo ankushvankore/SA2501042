@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Nikita Suite">
+	<test name = "Multiple Tests">
+		<classes>
+			<class name = "com.TestNGDemos.D05MyntraAssignment">
+				<methods>
+					<exclude name = "clickOnMen"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
