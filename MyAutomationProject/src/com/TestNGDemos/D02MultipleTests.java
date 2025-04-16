@@ -19,7 +19,7 @@ public class D02MultipleTests {
 		
 		driver.close();
 	}
-	@Test (priority = 5)
+	@Test (priority = 1)
 	public void launchingSheIN() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
