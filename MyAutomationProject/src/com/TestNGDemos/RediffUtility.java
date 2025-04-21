@@ -21,8 +21,7 @@ public class RediffUtility {
 	
 	public void setFullName(String fn)
 	{
-		//driver.findElement(By.xpa
-		th("//input[@placeholder='Enter your full name']")).sendKeys(fn);
+		//driver.findElement(By.xpath("//input[@placeholder='Enter your full name']")).sendKeys(fn);
 		fullName.sendKeys(fn);
 	}
 	public void setRediffId(String rId)

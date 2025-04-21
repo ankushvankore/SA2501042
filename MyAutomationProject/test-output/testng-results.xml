@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-16T22:09:48 IST" name="Default suite" finished-at="2025-04-16T22:09:56 IST" duration-ms="7648">
+  <suite started-at="2025-04-18T22:26:36 IST" name="Default suite" finished-at="2025-04-18T22:26:53 IST" duration-ms="16366">
     <groups>
     </groups>
-    <test started-at="2025-04-16T22:09:48 IST" name="Default test" finished-at="2025-04-16T22:09:56 IST" duration-ms="7648">
-      <class name="com.TestNGDemos.D09POM_Client">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.TestNGDemos.D09POM_Client@65f8f5ae]" started-at="2025-04-16T22:09:48 IST" name="beforeTest" finished-at="2025-04-16T22:09:55 IST" duration-ms="6869" status="PASS">
+    <test started-at="2025-04-18T22:26:36 IST" name="Default test" finished-at="2025-04-18T22:26:53 IST" duration-ms="16366">
+      <class name="com.TestNGDemos.OHRMTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.TestNGDemos.OHRMTest@1a4927d6]" started-at="2025-04-18T22:26:36 IST" name="setup" finished-at="2025-04-18T22:26:50 IST" duration-ms="13688" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="f()[pri:0, instance:com.TestNGDemos.D09POM_Client@65f8f5ae]" started-at="2025-04-16T22:09:55 IST" name="f" finished-at="2025-04-16T22:09:56 IST" duration-ms="649" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:0, instance:com.TestNGDemos.OHRMTest@1a4927d6]" started-at="2025-04-18T22:26:50 IST" name="testLogin" finished-at="2025-04-18T22:26:52 IST" duration-ms="1594" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.TestNGDemos.D09POM_Client@65f8f5ae]" started-at="2025-04-16T22:09:56 IST" name="afterTest" finished-at="2025-04-16T22:09:56 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.TestNGDemos.OHRMTest@1a4927d6]" started-at="2025-04-18T22:26:52 IST" name="close" finished-at="2025-04-18T22:26:53 IST" duration-ms="950" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.TestNGDemos.D09POM_Client -->
+        </test-method> <!-- close -->
+      </class> <!-- com.TestNGDemos.OHRMTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

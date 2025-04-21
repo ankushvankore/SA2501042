@@ -13,7 +13,7 @@ public class D09POM_Client {
 	RediffUtility r1;
 	WebDriver driver;
 	@Test
-	public void f() {
+	public void createAccount() {
 		r1.setFullName("Anand Kumar");
 		r1.setRediffId("adnandkumar");
 		r1.enterPassword("anand123");
