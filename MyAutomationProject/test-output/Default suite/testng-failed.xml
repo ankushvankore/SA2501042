@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGDemos.D13ReadData">
+      <class name="com.TestNGDemos.D14LoginToPracticeTest_DDF">
         <methods>
-          <include name="beforeTest"/>
+          <include name="login" invocation-numbers="1 2 4 5"/>
           <include name="afterTest"/>
-          <include name="readAllData"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.TestNGDemos.D13ReadData -->
+      </class> <!-- com.TestNGDemos.D14LoginToPracticeTest_DDF -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

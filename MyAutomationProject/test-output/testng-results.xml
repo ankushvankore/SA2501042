@@ -1,25 +1,301 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-18T22:26:36 IST" name="Default suite" finished-at="2025-04-18T22:26:53 IST" duration-ms="16366">
+  <suite started-at="2025-04-21T21:07:38 IST" name="Default suite" finished-at="2025-04-21T21:07:51 IST" duration-ms="12967">
     <groups>
     </groups>
-    <test started-at="2025-04-18T22:26:36 IST" name="Default test" finished-at="2025-04-18T22:26:53 IST" duration-ms="16366">
-      <class name="com.TestNGDemos.OHRMTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.TestNGDemos.OHRMTest@1a4927d6]" started-at="2025-04-18T22:26:36 IST" name="setup" finished-at="2025-04-18T22:26:50 IST" duration-ms="13688" status="PASS">
+    <test started-at="2025-04-21T21:07:38 IST" name="Default test" finished-at="2025-04-21T21:07:51 IST" duration-ms="12967">
+      <class name="com.TestNGDemos.D14LoginToPracticeTest_DDF">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:38 IST" name="beforeTest" finished-at="2025-04-21T21:07:44 IST" duration-ms="6067" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogin()[pri:0, instance:com.TestNGDemos.OHRMTest@1a4927d6]" started-at="2025-04-18T22:26:50 IST" name="testLogin" finished-at="2025-04-18T22:26:52 IST" duration-ms="1594" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:44 IST" name="login" data-provider="getLoginData" finished-at="2025-04-21T21:07:47 IST" duration-ms="2288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.TestNGDemos.OHRMTest@1a4927d6]" started-at="2025-04-18T22:26:52 IST" name="close" finished-at="2025-04-18T22:26:53 IST" duration-ms="950" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:47 IST" name="afterMethod" finished-at="2025-04-21T21:07:47 IST" duration-ms="656" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.TestNGDemos.OHRMTest -->
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:47 IST" name="login" data-provider="getLoginData" finished-at="2025-04-21T21:07:48 IST" duration-ms="476" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shardul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shardul123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="graphql.AssertException">
+            <message>
+              <![CDATA[condition expected to be true]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[graphql.AssertException: condition expected to be true
+at graphql.Assert.throwAssert(Assert.java:207)
+at graphql.Assert.assertTrue(Assert.java:114)
+at com.TestNGDemos.D14LoginToPracticeTest_DDF.login(D14LoginToPracticeTest_DDF.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- graphql.AssertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:48 IST" name="afterMethod" finished-at="2025-04-21T21:07:48 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:48 IST" name="login" data-provider="getLoginData" finished-at="2025-04-21T21:07:48 IST" duration-ms="377" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ritik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ritik123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="graphql.AssertException">
+            <message>
+              <![CDATA[condition expected to be true]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[graphql.AssertException: condition expected to be true
+at graphql.Assert.throwAssert(Assert.java:207)
+at graphql.Assert.assertTrue(Assert.java:114)
+at com.TestNGDemos.D14LoginToPracticeTest_DDF.login(D14LoginToPracticeTest_DDF.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- graphql.AssertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:48 IST" name="afterMethod" finished-at="2025-04-21T21:07:48 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:48 IST" name="login" data-provider="getLoginData" finished-at="2025-04-21T21:07:49 IST" duration-ms="578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:49 IST" name="afterMethod" finished-at="2025-04-21T21:07:49 IST" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:49 IST" name="login" data-provider="getLoginData" finished-at="2025-04-21T21:07:50 IST" duration-ms="380" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gagana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gagana123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="graphql.AssertException">
+            <message>
+              <![CDATA[condition expected to be true]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[graphql.AssertException: condition expected to be true
+at graphql.Assert.throwAssert(Assert.java:207)
+at graphql.Assert.assertTrue(Assert.java:114)
+at com.TestNGDemos.D14LoginToPracticeTest_DDF.login(D14LoginToPracticeTest_DDF.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- graphql.AssertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:50 IST" name="afterMethod" finished-at="2025-04-21T21:07:50 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:50 IST" name="login" data-provider="getLoginData" finished-at="2025-04-21T21:07:50 IST" duration-ms="442" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kanchana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kanchana123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="graphql.AssertException">
+            <message>
+              <![CDATA[condition expected to be true]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[graphql.AssertException: condition expected to be true
+at graphql.Assert.throwAssert(Assert.java:207)
+at graphql.Assert.assertTrue(Assert.java:114)
+at com.TestNGDemos.D14LoginToPracticeTest_DDF.login(D14LoginToPracticeTest_DDF.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- graphql.AssertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:50 IST" name="afterMethod" finished-at="2025-04-21T21:07:50 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.TestNGDemos.D14LoginToPracticeTest_DDF@475c9c31]" started-at="2025-04-21T21:07:50 IST" name="afterTest" finished-at="2025-04-21T21:07:51 IST" duration-ms="1020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.TestNGDemos.D14LoginToPracticeTest_DDF -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
