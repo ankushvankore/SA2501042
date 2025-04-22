@@ -10,3 +10,9 @@ https://drive.google.com/drive/folders/1Qo7mYlxQZnT13hbomki1l5lgoo8npoA4
 Apache POI Download Link
 https://archive.apache.org/dist/poi/release/bin/
 (Download poi-bin-5.2.3-20220909.zip file)(Last 4th file)
+
+Extent Report Dependency Link
+https://mvnrepository.com/artifact/com.aventstack/extentreports
+
+Cucumber Skeleton
+https://github.com/cucumber/cucumber-java-skeleton/commit/d7249b50c570816eba27ce94557e1de7e9b0f97
