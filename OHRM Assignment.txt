@@ -1,6 +1,6 @@
 URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
-Note: Try using POM (If possible)
+Note: Try using Page Object Model (If possible)
 
 1. Login with Admin 
 2. Click on PIM
