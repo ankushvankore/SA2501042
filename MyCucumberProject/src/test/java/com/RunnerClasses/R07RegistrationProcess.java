@@ -10,4 +10,5 @@ import io.cucumber.junit.CucumberOptions;
 					glue = "com.StepDef")
 public class R07RegistrationProcess {
 
+	
 }

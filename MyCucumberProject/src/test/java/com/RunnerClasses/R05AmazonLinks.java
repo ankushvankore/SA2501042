@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 					glue = "com.StepDef",
 					tags = "@AmazonTest",
 					publish = true)
-public class S05AmazonLinks {
+public class R05AmazonLinks {
 	/*
 	 * Execute Single Scenario 		tags = "@FashionLink"
 	 * Execute Multiple Scenarios	tags = "@FashionLink or @SmokeTest"
